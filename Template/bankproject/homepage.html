@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOMEPAGE</title>
+</head>
+<body bgcolor="blue">
+    {%if user.is_authenticated%}
+     <a href="../show_details/"> <button>show bank details</button></a>
+        <a href="../logout1/"> <button>logout</button></a>
+        <a href="../register/"> <button>add_participant</button></a>
+
+    {%else%}
+        <h1>GOOD MORNING ,welcome to my HOMEpage.....</h1>
+        <a href="../new_user_form/"> <button>register</button></a>
+         <a href="../login_form/"> <button>login</button></a>
+    {%endif%}
+    <br>
+    <br>
+    <img src="{%static 'images/xyz.jpg'%}">
+
+</body>
+</html>
+

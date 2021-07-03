@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CUSTOMER ACCount DETAILS</title>
+</head>
+<body>
+    <h1> {%for items in qset%}
+           name:{{items.c_name}}&nbsp,id:{{items.c_id}}&nbsp, emailid:{{items.c_emailid}}&nbsp, customer balance:{{items.c_balance}}&nbsp, phone_no:{{items.c_phone_no}}
+        <br>
+        {% endfor %}
+    </h1>
+
+</body>
+</html>
